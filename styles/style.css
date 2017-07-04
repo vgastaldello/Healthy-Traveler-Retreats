@@ -27,6 +27,9 @@ a{
   text-align: right;
 }
 
+.no-padding{
+  padding: 0% !important
+}
 
 /*Header Styles*/
 header{
@@ -46,6 +49,7 @@ header{
 header img{
   display: block;
     margin: auto;
+    width: 100px;
 }
 header nav{
   display:flex;
@@ -56,7 +60,7 @@ header nav{
 h1,h2,h3 {text-align: center}
 h1{
   font-size: 60px;
-  margin-top: 10%;
+  margin-top: 1%;
   text-align: center;
 }
 
