@@ -4,12 +4,23 @@
   padding: 0;
   max-width: 100%;
   margin:0;
+
   /*border:1px solid black;*/
 }
+
+[class*=grid-], [class*=grid_], [class~=grid] {
+  margin:0%;
+}
+
 body{
   /*Font Family for entire webpage*/
 
 }
+
+.nav-background, section, footer{
+  padding: 3%;
+}
+
 h1, h2, h3, h4, h5, h6{
   /*Font Family for Header*/
   font-family: 'Open Sans Condensed', sans-serif;
