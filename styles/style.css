@@ -2,6 +2,7 @@
 *{
   box-sizing: border-box;
   padding: 0;
+  max-width: 100%;
   margin:0;
   /*border:1px solid black;*/
 }
@@ -38,6 +39,7 @@ header{
   background-position: center;
   background-image: url("http://www.telegraph.co.uk/content/dam/Travel/Tours/Machu%20Picchu-xlarge.jpg");
   min-height: 100vh;
+
 }
 
 .nav-background{
@@ -68,17 +70,25 @@ header a{
   color: black;
 }
 
-/*section two retreats*/
+/*Section Two Retreats Starts*/
 .two section{
   padding: 20%;
 r
 }
-
 .grid-retreats{
   text-align: center;
 }
 
-/*section three partners*/
+.greece-pic {
+  background-image: url();
+}
+
+
+
+
+
+
+/*Section Three Partners Starts*/
 
 
 /*section four contact*/
