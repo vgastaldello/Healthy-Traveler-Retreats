@@ -3,17 +3,46 @@ layout: default
 ---
 
 <!--Section Two Retreats Starts-->
-<section>
+<section id="second-section">
 <div class="section headers">
   <h2> -RETREATS- </h2>
 </div>
 
 <div class="grid-retreats">
-
+  {% for retreat in site.retreats %}
+  <!-- <div class="col-6">
+    <a href="{{retreat.url}}">
+      <div stlye="background-image:url('{{retreats.image_path}}')" >
+      </div>
+    </a>
+  </div> -->
+  {% endfor %}
     <div class="col-6">
       <p>Greece Retreat</p>
         <a href="...">
-          <div class="greece-pic">
+          <div class="greece-pic hover-switch">
+            <div class="hover-disappear flex-center">
+              <span class="">
+                <h3>Greece</h3>
+                <h2>Laconia</h2>
+                <h3>September 9th-17th</h3>
+              </span>
+            </div>
+            <div class="grid-middle-center hover-appear">
+                <div class="col-6">
+                  title
+                </div>
+                <div class="col-6">
+                  venue
+                </div>
+                <div class="col-6">
+                  teachers
+                </div>
+                <div class="col-6">
+                  price
+                </div>
+
+            </div>
           </div>
         </a>
     </div>

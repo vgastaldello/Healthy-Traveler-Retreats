@@ -23,7 +23,8 @@ body{
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-image: url(../images/mountain-top-hike.jpeg);
+  background-color: white;
+  /*background-image: url(../images/mountain-top-hike.jpeg);
   /*background-image: url("http://www.telegraph.co.uk/content/dam/Travel/Tours/Machu%20Picchu-xlarge.jpg");*/
   font-family: 'Lato', sans-serif;
 }
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6{
 
 a{
   text-decoration: none; /*takes underline off anchor links*/
-
+  color: inherit;
 }
 
 /*helper*/
@@ -55,6 +56,11 @@ a{
 .no-padding{
   padding: 0% !important
 }
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /*Header Styles*/
 header{
@@ -63,6 +69,7 @@ header{
   background-position: center;
   background-image: url(../images/mountain-top-rocks.jpeg);
   /*background-image: url("http://www.telegraph.co.uk/content/dam/Travel/Tours/Machu%20Picchu-xlarge.jpg");*/
+  position: relative;
   min-height: 100vh;
 
 }
@@ -85,9 +92,22 @@ header .fa{
   font-size: 20px;
   margin: .5%;
 }
+header .fa-angle-double-down{
+  font-size: 75px;
+  padding: 25px;
+  margin-bottom: -25px;
+}
 header nav{
   display:flex;
   align-content:space-between;
+
+}
+
+.bounce{
+  position: absolute;
+bottom: 0;
+text-align: center;
+width: 100%;
 
 }
 
@@ -105,25 +125,64 @@ header p{
   font-size: 14px;
 
 }
+
+header h2{
+  font-size: 60px;
+  margin-top: 15vh;
+}
+
 #mc_embed_signup input.button{
   width: 100%;
 }
 
 /*Section Two Retreats Starts*/
-.two section{
-  padding: 20%;
-r
-}
-.grid-retreats{
-  text-align: center;
-
-}
 
 .grid-retreats div{
   min-height: 65vh;
   background-size: cover;
   background-position: center;
 }
+
+.two section{
+  padding: 20%;
+r
+}
+.hover-appear{
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.hover-appear div{
+  min-height: 0;
+}
+.hover-switch{
+  position: relative;
+}
+.hover-disappear{
+  transition: 1s;
+}
+
+.hover-switch:hover .hover-disappear{
+  opacity: 0;
+
+}
+
+.hover-switch:hover .hover-appear{
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+.grid-retreats{
+  text-align: center;
+
+}
+
 
 .greece-pic{
   background-image: url(../images/Greece.jpeg);
@@ -152,6 +211,11 @@ r
 
 
 /*section four contact*/
+
+.contact-width{
+  width: 50%;
+  margin: auto;
+}
 
 input,textarea,button{
   display: block;
