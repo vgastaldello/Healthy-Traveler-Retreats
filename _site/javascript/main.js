@@ -3,7 +3,7 @@ $("document").ready(function(){
 
 
 $("#typed").typed( {
-   strings: ["Adventure.", "Education.", "Inspiration.", "Transformation."],
+   strings: ["Get Active.", "Eat Local.", "Give Back."],
    typeSpeed: 50,
    backDelay: 1000,
    loop: true,
