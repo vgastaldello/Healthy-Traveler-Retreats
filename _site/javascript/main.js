@@ -12,3 +12,7 @@ $("#typed").typed( {
    });
 
  });
+/*  Testimonials JS */
+
+
+vcsd
